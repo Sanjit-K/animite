@@ -14,24 +14,9 @@ body{
     background-color:black;
 }
 
-.optionPanel{
-  width:400px;
-  height:1000px;
-  background-color:#292929;
-  z-index:1000;
-  position:absolute;
-  right:0px;
-  opacity:90%;
-  display:flex;
-}
 
 
-.options{
-  color:white;
-  font-family: monospace;
-  position:absolute;
-  cursor:pointer;
-}
+
 
 .animations a{
   margin-top:100px;
@@ -56,37 +41,8 @@ body{
   cursor:pointer;
 }
 
-.colors{
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    width:100%;
-}
 
-.blue {
-    background-color:blue;
-    height:50px;
-    width:50px;
 
-}
-.red {
-    background-color:red;
-    height:50px;
-    width:50px;
-
-}
-.green {
-    background-color:green;
-    height:50px;
-    width:50px;
-
-}
-.yellow {
-    background-color:yellow;
-    height:50px;
-    width:50px;
-
-}
 
 .animations{
     
