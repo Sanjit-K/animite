@@ -46,10 +46,9 @@ function changeAnim(add, selected){
         for (var i = 0; i < z.length; i++) {
             z[i].classList.remove('selected')
             
-            
         }
 
-        x.classList.remove('ea-sizeup', 'ea-fade')
+        x.classList.remove('ea-sizeup', 'ea-fade', 'ea-spininr', 'ea-spininl')
         x.classList.add(add)
         y.classList.add('selected');
 
@@ -100,17 +99,23 @@ function EaDropdown(){
     var x = document.getElementById('ea-anim-dropdown');
     var fade = document.getElementById('fade');
     var sizeup = document.getElementById('sizeup');
+    var spininr = document.getElementById('spininr');
+    var spininl = document.getElementById('spininl');
    
 
     if(x.textContent == '+ enter animations'){
         x.textContent="- enter animations"
         fade.textContent= "";
         sizeup.textContent= "";
+        spininr.textContent= "";
+        spininl.textContent= "";
         
     } else{
         x.textContent="+ enter animations"
         fade.textContent = "fade";
         sizeup.textContent= "sizeup";
+        spininr.textContent = "spin in right";
+        spininl.textContent = "spin in left";
     }
 
     
