@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="animite.css">
+    
+</head>
+<body>
+    
+
+    <div class="main">
+        
+
+        
+
+        <div class="animations">
+            <h1 id="text" class="default " onclick="copyText()">copy classes</h1>
+            <a href="animite.css" download >Download CSS Document</a>
+            <p>note: some animations will not be smooth when combined with others, to fix this during implementation you have to combine animations into a single class</p>
+        </div>
+        <img id="background" src="https://static.vecteezy.com/system/resources/previews/012/080/945/non_2x/abstract-wave-background-monotone-vector.jpg"></img>
+        
+        <div class="sidebar">
+            <h2 class="options">options</h2>
+            <p id="hover-anim-dropdown" onclick="HoverDropdown()">+ hover animations</p>
+            <h1 id ="scale" onclick="changeAnim('h-scale','scale')">scale </h1>
+            <h1 id = "opacity" onclick="changeAnim('h-opacity', 'opacity')">opacity</h1>
+            <h1 id = "spinr" onclick="changeAnim('h-spinr', 'spinr')">spin right</h1>
+            <h1 id = "spinl" onclick="changeAnim('h-spinl', 'spinl')">spin left</h1>
+            <p id="ea-anim-dropdown" onclick="EaDropdown()">+ enter animations</p>
+            <h1 id="fade" class="ea" onclick="changeAnim('ea-fade', 'fade')">fade</h1>
+            <h1 id="sizeup" class="ea"onclick="changeAnim('ea-sizeup', 'sizeup')">sizeup</h1>
+        </div>
+
+        <div class="optionPanel">
+            <div class="colors">
+                <div class="blue"></div>
+                <div class="red"></div>
+                <div class="green"></div>
+                <div class="yellow"></div>
+            </div>
+        </div>
+    
+        <div id="snackbar">animation copied</div>
+    </div>
+    
+    
+    
+</body>
+</html>
+

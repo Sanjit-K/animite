@@ -1,0 +1,72 @@
+
+/*hover animations*/
+
+
+
+.h-opacity{
+    opacity:0.5;
+    transition: opacity 0.55s ease-in-out;
+}
+
+.h-opacity:hover{
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+}
+
+
+.h-scale{
+    scale: 100%;
+    transition: scale .55s ease-in-out;
+}
+
+.h-scale:hover{
+    scale:110%;
+    transition: scale .55s ease-in-out;
+}
+
+
+.h-spinr{
+    rotate: 0deg;
+    transition: rotate .55s ease-in-out;
+}
+
+.h-spinr:hover{
+    rotate:10deg;
+    transition: rotate .55s ease-in-out;
+}
+
+
+.h-spinl{
+    rotate: 0deg;
+    transition: rotate .55s ease-in-out;
+}
+.h-spinl:hover{
+    rotate:-10deg;
+    transition: rotate .55s ease-in-out;
+}
+
+
+
+/*enter animations*/
+
+@keyframes ea-fade{
+    from{opacity:0%}
+    to{opacity:100%}
+}
+
+@keyframes ea-sizeup{
+    from{transform: scale(0%)}
+    to{transform:scale(100%)}
+}
+
+.ea-fade{
+    animation-name:ea-fade;
+    animation-duration:.55s;
+    animation-timing-function: ease-in-out;
+}
+
+.ea-sizeup{
+    animation-name:ea-sizeup;
+    animation-duration:.55s;
+    animation-timing-function: ease-in-out;
+}

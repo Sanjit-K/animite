@@ -1,0 +1,283 @@
+
+html{
+  overflow:hidden;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color:black;
+}
+
+.optionPanel{
+  width:400px;
+  height:1000px;
+  background-color:#292929;
+  z-index:1000;
+  position:absolute;
+  right:0px;
+  opacity:90%;
+  display:flex;
+}
+
+
+.options{
+  color:white;
+  font-family: monospace;
+  position:absolute;
+  cursor:pointer;
+}
+
+.animations a{
+  margin-top:100px;
+  cursor:pointer;
+  position:absolute;
+  text-decoration: none;
+  color:white;
+  text-decoration:underline;
+}
+
+.animations img{
+  position:absolute;
+  border:none;
+  background:none;
+  height:70px;
+
+  
+  top:0px;
+  right:500px;
+  margin-top:5px;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.colors{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    width:100%;
+}
+
+.blue {
+    background-color:blue;
+    height:50px;
+    width:50px;
+
+}
+.red {
+    background-color:red;
+    height:50px;
+    width:50px;
+
+}
+.green {
+    background-color:green;
+    height:50px;
+    width:50px;
+
+}
+.yellow {
+    background-color:yellow;
+    height:50px;
+    width:50px;
+
+}
+
+.animations{
+    
+    margin: auto;
+    position:absolute;
+    width:100%;
+    height:100%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family:monospace;
+    flex: 3;
+    padding-right:500px;
+}
+
+#background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #1c1d25;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20vw;
+  z-index: -100;
+  filter: brightness(40%);
+
+}
+
+.default{
+  cursor: pointer;
+}
+
+
+.animate-opacity{
+    opacity: 0.6;
+    
+    transition: opacity .55s ease-in-out;
+    
+}
+
+.animate-opacity:hover{
+    cursor:pointer;
+    opacity: 1.0;
+    
+    transition: opacity .55s ease-in-out;
+    
+}
+
+
+
+
+
+.selected{
+  color:rgb(242, 242, 242);
+  animation: fadein 0.5s;
+  
+}
+
+
+.animate-scale{
+  scale: 100%;
+  transition: scale .55s ease-in-out;
+}
+
+.animate-scale:hover{
+  cursor:pointer;
+  scale:110%;
+  transition: scale .55s ease-in-out;
+}
+
+
+.sidebar p{
+  font-family:monospace;
+  color:white;
+  font-size: 2em;
+  z-index:1;
+  cursor: pointer;
+  margin-top:50px;
+}
+
+.animate-spinr{
+  rotate: 0deg;
+  transition: rotate .55s ease-in-out;
+}
+.animate-spinr:hover{
+  cursor:pointer;
+  rotate:10deg;
+  transition: rotate .55s ease-in-out;
+}
+
+.animate-spinl{
+  rotate: 0deg;
+  transition: rotate .55s ease-in-out;
+}
+.animate-spinl:hover{
+  cursor:pointer;
+  rotate:-10deg;
+  transition: rotate .55s ease-in-out;
+}
+
+
+.sidebar p:hover{
+  color:aquamarine;
+}
+
+
+
+
+
+
+
+
+.sidebar{
+  background-color:rgb(43, 43, 107);
+  width:500px;
+  height:100vh;
+  float:right;
+  display:flex;
+  flex-direction: column;
+  padding:50px;
+  z-index:-1;
+}
+
+.sidebar h1{
+  
+  font-family:monospace;
+  cursor:pointer;
+  z-index: 1;
+  margin-top: 10px;
+  
+}
+
+
+ 
+ #snackbar {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px;
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    color:white;
+    font-family:monospace;
+  }
+  
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  
+
+
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  } 
+
+
+  
+
+.animations p{
+  position:absolute;
+  bottom:0px;
+  width:50%;
+  left:0px;
+  color:#333;
+}
+
